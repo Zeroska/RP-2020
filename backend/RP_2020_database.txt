@@ -1,0 +1,74 @@
+[Collection]:
+  - Categories
+    + id: string
+    + name: string
+    + questionArray[questionId]
+
+[Collection]:
+  - Questions
+    + id: string
+    + title: string
+    + ref: [string] // reference resource, influence by whom ???
+    + author: string
+    + statement: string (cau hoi) //text + latex SVG
+    + image : string(top and bottom of statment)
+    + correctAnswer : [number | string]
+    + Help: { [sub-collection]
+      + phase:{
+        name: string
+        openQuestion: string
+        subquestion:[
+           question[0]:{
+              statment: string
+              isMultipleChoice: boolean
+              choices:[
+                {
+                  content: string
+                  isCorrect: true
+                  response: string
+                },
+                {
+                  content: string
+                  isCorrect: false
+                  response: string
+                }
+              ]
+              isInput: boolean -> True -> render [INPUT BOX]
+              inputQuestion: string
+              correctAnswer:[string]
+              wordSuggestion : string //Hi vong co 1 cai plugin
+           }
+        ]
+        endPhaseQuotes: string
+      }
+    }
+---------------------------------------------------------------------
+[ANGULAR COMPONENT] and [ARCHITECHTURE]
+
+DoYourThingPage:
+  - UI module
+    ## Priority
+    [NavBarComponent] [3]
+    [QuestionComponent Left] [1]
+    [HelpComponent Right] [2]
+
+
+
+    ##
+    [SideBarComponent]
+    [FooterComponent]
+
+PAGEs:
+  SeachPage [Lowest Priotity]
+  DoYourThingPage [High Priority]
+  HomePage [Medium Priority]
+  AddQuestionPage
+
+
+
+
+
+
+
+
+
