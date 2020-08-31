@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Ref: hiện thị latex trên web
 http://web.mit.edu/maple/www/how-to/math-to-web-1.html
+
+Latex MathQ
+https://stackoverflow.com/questions/41059801/virtual-latex-math-keyboard-with-mathjax-or-similar
