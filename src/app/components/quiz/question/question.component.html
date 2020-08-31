@@ -1,0 +1,26 @@
+<div class="fixed-content-cat"> 
+    <button mat-raised-button (click)="openQuestionListDialog()" class="fixed-content-cat-font">Conveyor Belt</button>
+</div>
+<div class="fixed-question-title">
+    <!-- Conveyor Belt -->
+</div>
+<div class="scrollable-question">
+    <p *ngFor="let item of [0,1]">A box of mass m = 1.5 kg is dropped vertically 
+        onto a conveyor belt which is moving with a constant speed v = 6.2 m/s. The coefficient of kinetic friction between the box and the conveyor belt is: µk = 0.12. How much time does it take before the box attains the same speed as the conveyor belt?</p>
+    <img class="center-img" src="../../../../assets//temppic//belt.gif">
+    <p *ngFor="let item of [0,3,2,1,2]">A box of mass m = 1.5 kg is dropped vertically 
+        onto a conveyor belt which is moving with a constant speed v = 6.2 m/s. The coefficient of kinetic friction between the box and the conveyor belt is: µk = 0.12. How much time does it take before the box attains the same speed as the conveyor belt?</p>
+</div>
+<mat-divider></mat-divider>
+<div class="answear-input">
+    <mat-form-field appearance="outline">
+        <mat-label>Đáp án</mat-label>
+        <input matInput>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button class="checkBox">Eureka 😂</button>
+    <button mat-raised-button class="checkBox">Help Me 🤕</button>
+
+</div>
+
+
