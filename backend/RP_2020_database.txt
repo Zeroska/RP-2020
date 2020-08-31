@@ -37,11 +37,21 @@
               inputQuestion: string
               correctAnswer:[string]
               wordSuggestion : string //Hi vong co 1 cai plugin
+              followUpQuestion: multiple choice
            }
         ]
         endPhaseQuotes: string
       }
     }
+[Collection]:
+  - Users:{
+
+  }
+Notes:
+Revise: a single button that ask them totally understand the phenomena
+Follow up question: 
+
+
 ---------------------------------------------------------------------
 [ANGULAR COMPONENT] and [ARCHITECHTURE]
 
