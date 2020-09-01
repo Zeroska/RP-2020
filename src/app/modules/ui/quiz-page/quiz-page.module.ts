@@ -7,9 +7,13 @@ import { NavComponent } from 'src/app/components/nav/nav.component';
 import {QuestionComponent} from '../../../components/quiz/question/question.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {MatStepperModule} from '@angular/material/stepper';
+import {HelpComponent} from '../../../components/quiz/help/help.component'
+import { HelpSelectedIndexComponent } from 'src/app/components/quiz/help-selected-index/help-selected-index.component';
+import { HelperStepComponent } from 'src/app/components/quiz/helper-step/helper-step.component';
+import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
-  declarations: [NavComponent,QuestionComponent],
+  declarations: [NavComponent,QuestionComponent,HelpComponent,HelpSelectedIndexComponent,HelperStepComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -17,11 +21,14 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatToolbarModule,
     MatInputModule,
-    MatDividerModule
+    MatDividerModule,
+    MatStepperModule,
+    MatRadioModule
+
     
   ],
   exports:[
-    NavComponent,QuestionComponent
+    NavComponent,QuestionComponent,HelpComponent,HelpSelectedIndexComponent,HelperStepComponent
   ]
 })
 
