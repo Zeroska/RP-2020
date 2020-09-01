@@ -1,0 +1,17 @@
+<div class="center-container">
+    <div class="helper-question">{{questionData.openQuestion}}</div>
+
+    <!-- // Wrong -->
+    <div class="subquestionCenter">
+        <div *ngFor="let subquestion of questionData.subquestion">
+            <app-helper-step [subQuestion]="subquestion"></app-helper-step>
+
+        </div>
+        <!-- <app-helper-step [subQuestion]="questionData.subquestion[0]"></app-helper-step> -->
+    </div>
+    <mat-divider></mat-divider>
+    <!-- <div style="background-color: royalblue;width: 50px;height: 50px;">
+        {{selectedHelp}}
+    </div> -->
+    
+</div>

@@ -1,0 +1,21 @@
+.center-container{
+    // padding: 15px;
+    // padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    max-height: 70vh;
+    overflow-y: scroll;
+    // flex-direction: column;
+}
+.helper-question{
+    font-family: OpenSans;
+    font-size:17px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.subquestionCenter{
+    // width: 100%;
+}
