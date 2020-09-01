@@ -32,3 +32,7 @@ http://web.mit.edu/maple/www/how-to/math-to-web-1.html
 
 Latex MathQ
 https://stackoverflow.com/questions/41059801/virtual-latex-math-keyboard-with-mathjax-or-similar
+
+
+FLEX BOX HELPER 
+https://flexbox.help/
