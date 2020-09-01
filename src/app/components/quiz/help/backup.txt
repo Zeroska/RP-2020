@@ -1,0 +1,18 @@
+<mat-horizontal-stepper [linear]='true' #stepper (selectionChange)="logger($event)" [disableRipple]="true" class="help-stepper">
+    <ng-template matStepperIcon="edit">
+		<mat-icon>check</mat-icon>
+	</ng-template>
+
+    <mat-step *ngFor="let item of this.helpQuestion; index as i">
+        <!-- <ng-template>{{i}}</ng-template> -->
+    </mat-step>
+</mat-horizontal-stepper>
+                    <!-- ✨ TRIGGER FOR DIFF HELPER QUESTIONG INDEX ✨ -->
+<!-- <ng-container *ngIf="selectedIndex != null" class="scrollable-help-selected-index"> -->
+    <!-- // TEST -->
+<!-- <ng-container class="scrollable-help-selected-index">  -->
+    <ng-container *ngIf="selectedIndex != null" class="scrollable-help-selected-index">
+        <ng-container *ngIf="this.helpQuestion[this.selectedIndex] != null">
+            <app-help-selected-index [selectedHelp]="this.selectedIndex" [questionData]='this.helpQuestion[this.selectedIndex]'></app-help-selected-index>
+        </ng-container>
+    </ng-container>
